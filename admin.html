@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>問天實業 — 後台管理系統</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=Noto+Sans+SC:wght@400;500;700&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="admin-body">
+
+  <div class="admin-layout">
+    <!-- Sidebar -->
+    <aside class="admin-sidebar">
+      <div class="sidebar-logo">
+        <div class="logo-text">問天實業</div>
+        <div class="cms-label">CMS 管理系統</div>
+      </div>
+      <nav class="sidebar-nav">
+        <div class="sidebar-section-label">內容管理</div>
+        <div class="sidebar-nav-item active" data-section="hero">
+          <span class="nav-icon">◈</span> 首頁 Hero
+        </div>
+        <div class="sidebar-nav-item" data-section="about">
+          <span class="nav-icon">◈</span> 關於我們
+        </div>
+        <div class="sidebar-nav-item" data-section="advantages">
+          <span class="nav-icon">◈</span> 核心優勢
+        </div>
+        <div class="sidebar-nav-item" data-section="products">
+          <span class="nav-icon">◈</span> 產品服務
+        </div>
+        <div class="sidebar-nav-item" data-section="cases">
+          <span class="nav-icon">◈</span> 客戶案例
+        </div>
+        <div class="sidebar-nav-item" data-section="news">
+          <span class="nav-icon">◈</span> 新聞動態
+        </div>
+        <div class="sidebar-nav-item" data-section="contact">
+          <span class="nav-icon">◈</span> 聯繫我們
+        </div>
+        <div class="sidebar-nav-item" data-section="footer">
+          <span class="nav-icon">◈</span> 頁腳設置
+        </div>
+      </nav>
+      <div class="sidebar-footer">
+        v2.0 · 問天實業技術部
+      </div>
+    </aside>
+
+    <!-- Main Area -->
+    <div class="admin-main">
+      <!-- Top Bar -->
+      <div class="admin-topbar">
+        <div class="topbar-breadcrumb">
+          <span class="bc-main">內容管理</span>
+          <span class="bc-sep">/</span>
+          <span class="bc-current" id="bc-current">首頁 Hero</span>
+        </div>
+        <div class="topbar-actions">
+          <a href="index.html?published=0" target="_blank" class="btn-preview">預覽官網</a>
+          <button class="btn-save" id="btn-save">保存草稿</button>
+          <div class="topbar-avatar">W</div>
+        </div>
+      </div>
+
+      <!-- Content Area -->
+      <div class="admin-content" id="admin-content">
+        <!-- Content injected by admin.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast -->
+  <div class="toast" id="toast"></div>
+
+  <script src="js/content.js"></script>
+  <script src="js/admin.js"></script>
+</body>
+</html>
