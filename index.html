@@ -1,155 +1,229 @@
 <!DOCTYPE html>
 <html lang="zh-HK">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>問天實業 — AI 驅動的跨境生鮮供應鏈與無人機物流科技</title>
-  <meta name="description" content="香港問天實業（科技）有限公司，專注跨境生鮮貿易與AI無人機技術兩大核心業務。旗下「和光蔬菜」品牌爲香港餐廳提供一級新鮮蔬菜與淨菜加工服務。">
-  <meta name="keywords" content="問天實業,和光蔬菜,跨境生鮮,AI無人機,低空經濟,末端物流,香港企業,CAAC,CNAS">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=Noto+Sans+SC:wght@400;500;700&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>香港問天實業（科技）有限公司</title>
+<style>
+:root{--bg:#070708;--card:#0A0A0B;--card2:#1A1A1F;--text:#F2F2F2;--muted:#A8A8A8;--dim:#666;--green:#4ADE80;--gold:#E8C268;--bd:rgba(255,255,255,.08);--bd2:rgba(255,255,255,.2);--g15:rgba(74,222,128,.15);--g10:rgba(74,222,128,.1);--g30:rgba(74,222,128,.3);--gd10:rgba(232,194,104,.1);--gd15:rgba(232,194,104,.15)}
+*{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}body{font-family:'Sarasa Gothic SC','PingFang SC','Noto Sans SC','Inter',sans-serif;background:var(--bg);color:var(--text);line-height:1.6;-webkit-font-smoothing:antialiased}a{text-decoration:none;color:inherit;transition:color .2s}img{max-width:100%;display:block}section{width:1920px;max-width:100%;margin:0 auto}
+.nav{position:fixed;top:0;left:0;right:0;z-index:1000;height:72px;display:flex;align-items:center;justify-content:space-between;padding:20px;background:rgba(0,0,0,.85);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px)}.nav-logo{font-size:24px;color:var(--gold)}.nav-links{display:flex;gap:36px}.nav-links a{font-size:14px;color:var(--muted)}.nav-links a:first-child{color:var(--text)}.nav-links a:hover{color:var(--green)}.nav-cta{padding:10px;border:1px solid var(--g30);border-radius:8px;background:var(--g15);color:var(--green);font-size:14px;transition:background .2s}.nav-cta:hover{background:rgba(74,222,128,.25)}
+.hero{padding:80px;padding-top:152px;display:flex;align-items:center;gap:60px;min-height:850px}.hero-text{flex:1;max-width:640px;display:flex;flex-direction:column;gap:24px}.hero-tag{padding:6px;border:1px solid var(--g30);border-radius:6px;background:var(--g10);color:var(--green);font-size:12px;align-self:flex-start}.hero-t1{font-size:64px;font-weight:700;line-height:110%}.hero-t2{font-size:48px;font-weight:600;color:var(--gold);line-height:110%}.hero-desc{font-size:16px;color:var(--muted);line-height:160%}.hero-btns{display:flex;gap:16px}.btn-p{padding:14px;border:none;border-radius:8px;background:var(--green);color:var(--bg);font-size:15px;font-weight:600;cursor:pointer;transition:opacity .2s}.btn-p:hover{opacity:.85}.btn-s{padding:14px;border:1px solid var(--bd2);border-radius:8px;background:transparent;color:var(--text);font-size:15px;cursor:pointer;transition:background .2s}.btn-s:hover{background:rgba(255,255,255,.05)}.hero-vis{width:696px;height:580px;flex-shrink:0;border-radius:24px;overflow:hidden;background-size:cover;background-position:center}
+.sec{padding:80px 120px;display:flex;flex-direction:column;align-items:center;gap:40px}.sec-h{display:flex;flex-direction:column;align-items:center;gap:12px}.sec-l{font-size:12px;font-weight:600;color:var(--green);font-family:'Inter',sans-serif;letter-spacing:1.2px;text-transform:uppercase}.sec-t{font-size:40px;font-weight:700;text-align:center}.sec-s{font-size:16px;color:var(--muted);text-align:center}
+.adv-g{display:flex;gap:16px;width:100%;justify-content:space-between}.adv-c{width:320px;height:240px;padding:24px;background:var(--card);border:1px solid var(--bd);border-radius:12px;display:flex;flex-direction:column;gap:16px}.adv-i{width:48px;height:48px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:20px;font-weight:700}.adv-i.gn{background:var(--g15);color:var(--green)}.adv-i.gd{background:var(--gd15);color:var(--gold)}.adv-t{font-size:20px;font-weight:600}.adv-d{font-size:14px;color:var(--muted);line-height:160%}
+.biz-g{display:flex;gap:24px;width:100%;justify-content:space-between}.biz-c{width:800px;background:var(--card);border:1px solid var(--bd);border-radius:12px;overflow:hidden}.biz-img{width:100%;height:240px;background-size:cover;background-position:center}.biz-ct{padding:28px;display:flex;flex-direction:column;gap:12px}.biz-tag{padding:6px;border-radius:6px;font-size:12px;font-weight:600;align-self:flex-start}.biz-tag.gn{background:var(--g10);color:var(--green)}.biz-tag.gd{background:var(--gd10);color:var(--gold)}.biz-t{font-size:28px;font-weight:700}.biz-d{font-size:15px;color:var(--muted);line-height:160%}
+.about{display:flex;gap:60px;align-items:center;padding:80px 120px}.about-img{width:560px;height:480px;flex-shrink:0;border-radius:12px;overflow:hidden;border:1px solid var(--g30)}.about-img img{width:100%;height:100%;object-fit:cover}.about-ct{flex:1;display:flex;flex-direction:column;gap:20px}.about-ct .sec-h{align-items:flex-start}.about-ct .sec-t{text-align:left}.about-text{font-size:15px;color:var(--muted);line-height:180%}.cul-g{display:flex;gap:16px}.cul-c{flex:1;padding:20px 24px;background:var(--card);border:1px solid var(--bd);border-radius:10px}.cul-c h4{font-size:16px;font-weight:600;color:var(--green);margin-bottom:6px}.cul-c p{font-size:13px;color:var(--muted)}
+.org-sec{padding:80px 120px;display:flex;flex-direction:column;align-items:center;gap:40px}.org-chart{display:flex;justify-content:center;width:100%}.org-chart img{max-width:1200px;width:100%}
+.cred-g{display:flex;gap:16px;justify-content:center}.cred-c{width:400px;padding:32px 28px;background:var(--card);border:1px solid var(--bd);border-radius:12px;text-align:center;display:flex;flex-direction:column;align-items:center;gap:8px}.cred-i{width:56px;height:56px;border-radius:14px;background:var(--g10);color:var(--green);display:flex;align-items:center;justify-content:center;font-size:24px;font-weight:700;margin-bottom:12px}.cred-n{font-size:18px;font-weight:600}.cred-cd{font-size:13px;color:var(--gold)}.cred-d{font-size:13px;color:var(--muted)}
+.supply{padding:80px 120px;display:flex;flex-direction:column;gap:40px}.sub-t{font-size:24px;font-weight:600;margin-top:16px}.sub-d{font-size:14px;color:var(--muted)}.gtab{width:100%;border-collapse:separate;border-spacing:0;border-radius:12px;overflow:hidden;border:1px solid var(--bd)}.gtab th{background:var(--g10);padding:16px 20px;text-align:left;font-size:14px;font-weight:600;color:var(--green)}.gtab th:nth-child(2){color:var(--text)}.gtab th:nth-child(3){color:var(--muted)}.gtab td{padding:14px 20px;font-size:14px;border-bottom:1px solid var(--bd);color:var(--muted)}.gtab td:nth-child(1){color:var(--text);font-weight:500}.gtab td:nth-child(2){color:var(--text)}.gtab tr:last-child td{border-bottom:none}.prod-g{display:flex;gap:24px;justify-content:space-between}.prod-c{flex:1;background:var(--card);border:1px solid var(--bd);border-radius:12px;overflow:hidden}.prod-img{height:240px;background-size:cover;background-position:center}.prod-ct{padding:20px 24px;display:flex;flex-direction:column;gap:8px}.prod-c h4{font-size:18px;font-weight:600}.prod-c p{font-size:14px;color:var(--muted);line-height:170%}.tl{position:relative;padding-top:20px}.tl-line{position:absolute;top:20px;left:5%;right:5%;height:2px;background:var(--green);opacity:.3}.tl-steps{display:flex;justify-content:space-between;position:relative}.tl-step{text-align:center;flex:1;display:flex;flex-direction:column;align-items:center;gap:16px}.tl-dot{width:40px;height:40px;border-radius:50%;background:var(--card2);border:2px solid var(--green);display:flex;align-items:center;justify-content:center;z-index:1}.tl-dot::after{content:'';width:12px;height:12px;border-radius:50%;background:var(--green)}.tl-step h4{font-size:16px;font-weight:600}.tl-step p{font-size:13px;color:var(--muted)}
+.svc-g{display:flex;gap:24px;justify-content:center}.svc-c{flex:1;max-width:544px;padding:36px 28px;background:var(--card);border:1px solid var(--bd);border-radius:12px;text-align:center;display:flex;flex-direction:column;align-items:center;gap:10px;transition:border-color .2s}.svc-c:hover{border-color:var(--green)}.svc-i{width:56px;height:56px;border-radius:14px;background:var(--g10);color:var(--green);display:flex;align-items:center;justify-content:center;font-size:24px;font-weight:700;margin-bottom:10px}.svc-c h4{font-size:20px;font-weight:600}.svc-c p{font-size:14px;color:var(--muted);line-height:170%}.soc-g{display:flex;gap:32px;justify-content:center;margin-top:24px}.soc-i{width:48px;height:48px;border-radius:12px;background:var(--card);border:1px solid var(--bd);display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:700;color:var(--muted);cursor:pointer;transition:all .2s}.soc-i:hover{border-color:var(--green);color:var(--green)}
+.case-g{display:flex;gap:16px;width:100%;justify-content:space-between}.case-c{flex:1;padding:28px 24px;background:var(--card);border:1px solid var(--bd);border-radius:12px;display:flex;flex-direction:column;gap:8px}.case-c h4{font-size:18px;font-weight:600}.case-tag{font-size:12px;color:var(--gold)}.case-c p{font-size:13px;color:var(--muted);line-height:170%}
+.news-g{display:flex;gap:24px;width:100%;justify-content:space-between}.news-c{flex:1;background:var(--card);border:1px solid var(--bd);border-radius:12px;overflow:hidden}.news-img{height:200px;background-size:cover;background-position:center}.news-ct{padding:20px 24px;display:flex;flex-direction:column;gap:8px}.news-date{font-size:12px;color:var(--gold)}.news-c h4{font-size:16px;font-weight:600;line-height:150%}
+.contact{display:flex;gap:60px;padding:80px 120px;align-items:flex-start}.ci{flex:1;display:flex;flex-direction:column;gap:32px}.ci .sec-h{align-items:flex-start}.ci .sec-t{text-align:left}.ci-item{display:flex;flex-direction:column;gap:6px}.ci-item h5{font-size:14px;font-weight:600;color:var(--green)}.ci-item p{font-size:14px;color:var(--muted)}.cf{flex:1.3;background:var(--card);border:1px solid var(--bd);border-radius:12px;padding:40px;display:flex;flex-direction:column;gap:20px}.cf h3{font-size:24px;font-weight:700}.fr{display:flex;gap:16px}.fg{flex:1;display:flex;flex-direction:column;gap:8px}.fg label{font-size:13px;color:var(--muted)}.fg input,.fg select,.fg textarea{width:100%;padding:12px 16px;background:rgba(255,255,255,.05);border:1px solid var(--bd);border-radius:8px;color:var(--text);font-size:14px;font-family:inherit;outline:none;transition:border-color .2s}.fg input:focus,.fg select:focus,.fg textarea:focus{border-color:var(--green)}.fg textarea{min-height:120px;resize:vertical}.submit{width:100%;padding:14px;border:none;border-radius:10px;background:var(--green);color:var(--bg);font-size:16px;font-weight:600;cursor:pointer;transition:opacity .2s}.submit:hover{opacity:.85}
+.footer{padding:40px 120px;background:#0D0D0D;display:flex;justify-content:space-between;align-items:flex-start}.ft-l{max-width:400px;display:flex;flex-direction:column;gap:16px}.ft-logo{font-size:24px;color:var(--gold)}.ft-slogan{font-size:13px;color:var(--muted);line-height:180%;white-space:pre-line}.ft-r{display:flex;gap:80px}.ft-col{display:flex;flex-direction:column;gap:8px}.ft-col h5{font-size:14px;font-weight:600;margin-bottom:8px}.ft-col a{font-size:13px;color:var(--muted)}.ft-col a:hover{color:var(--green)}.copyright{padding:20px;background:#080808;text-align:center;font-size:13px;color:var(--muted)}
+@media(max-width:1200px){.nav{padding:20px 40px}.sec,.about,.contact,.supply,.org-sec{padding-left:40px;padding-right:40px}.hero{padding:80px 40px;padding-top:132px;flex-direction:column;text-align:center}.hero-text{align-items:center}.hero-tag{align-self:center}.hero-vis{width:100%;max-width:580px;height:400px}.adv-g{flex-wrap:wrap;justify-content:center}.adv-c{width:calc(50% - 8px)}.biz-g{flex-direction:column}.biz-c{width:100%}.about{flex-direction:column}.about-img{width:100%;max-width:560px;height:360px}.cred-g{flex-wrap:wrap;justify-content:center}.cred-c{width:calc(50% - 8px)}.prod-g{flex-direction:column}.svc-g{flex-direction:column;align-items:center}.svc-c{width:100%;max-width:500px}.case-g{flex-wrap:wrap}.case-c{width:calc(50% - 8px)}.news-g{flex-direction:column}.contact{flex-direction:column}.footer{flex-direction:column;gap:40px}}
+@media(max-width:768px){.nav{padding:20px}.nav-links{display:none}.nav-cta{display:none}.sec,.about,.contact,.supply,.org-sec,.footer{padding-left:20px;padding-right:20px}.hero{padding:80px 20px;padding-top:112px}.hero-t1{font-size:36px}.hero-t2{font-size:28px}.hero-vis{height:280px}.adv-g{flex-direction:column}.adv-c{width:100%}.cred-g{flex-direction:column}.cred-c{width:100%}.case-g{flex-direction:column}.case-c{width:100%}.fr{flex-direction:column}.gtab{font-size:12px}.gtab th,.gtab td{padding:10px 12px}.tl-steps{flex-wrap:wrap}.tl-step{flex:0 0 33%}}
+</style>
 </head>
 <body>
+<nav class="nav"><div class="nav-logo">香港問天實業</div><div class="nav-links"><a href="#hero">首頁</a><a href="#about">關於我們</a><a href="#business">業務概覽</a><a href="#org">組織架構</a><a href="#supply">生鮮供應鏈</a><a href="#tech">科技賦能</a><a href="#cases">客戶案例</a><a href="#news">新聞動態</a><a href="#contact">聯繫我們</a></div><a href="#contact" class="nav-cta">立即諮詢</a></nav>
+<section class="hero" id="hero"><div class="hero-text"><div class="hero-tag">科技賦能 · 跨境生鮮 · 流量打造</div><h1 class="hero-t1">專注一級鮮菜</h1><h2 class="hero-t2">從田間到餐桌 100%一級品質</h2><p class="hero-desc">從源頭種植到極速配送，只售一級菜，口感係唔同！</p><div class="hero-btns"><a href="#supply" class="btn-p">了解生鮮供應鏈</a><a href="#contact" class="btn-s">合作諮詢</a></div></div><div class="hero-vis" style="background-image:url('images/exported/2_28.png')"></div></section>
+<section class="sec" id="advantages"><div class="sec-h"><div class="sec-l">WHY CHOOSE US</div><h2 class="sec-t">我們的核心優勢</h2><p class="sec-s">以品質與信譽，成爲香港餐飲行業首選的食材合作夥伴</p></div><div class="adv-g"><div class="adv-c"><div class="adv-i gn">證</div><div class="adv-t">DONG ZHENG 權威認證</div><p class="adv-d">國家權威檢測機構認證，檢測結果兩地互認，品質有據可依。</p></div><div class="adv-c"><div class="adv-i gd">達</div><div class="adv-t">深夜極速達</div><p class="adv-d">預計23:50極速送達，深夜冷鏈直送，凌晨備料，清晨上桌。</p></div><div class="adv-c"><div class="adv-i gn">技</div><div class="adv-t">科技賦能</div><p class="adv-d">免費爲實體餐廳進行官網建站、社媒引流、開發互聯網獲客系統，助力您的餐廳提高知名度+營業額。</p></div><div class="adv-c"><div class="adv-i gd">價</div><div class="adv-t">價格透明</div><p class="adv-d">明碼標價，每斤僅賺0.3HKD，無中間環節加價，誠實經營。</p></div></div></section>
+<section class="about" id="about"><div class="about-img"><img src="images/exported/2_82.png" alt="關於我們"></div><div class="about-ct"><div class="sec-h"><div class="sec-l">ABOUT US</div><h2 class="sec-t">關於香港問天實業</h2></div><p class="about-text">香港問天實業（科技）有限公司，是一家立足香港、連接內地核心產區的現代化農業科技企業。我們以「一級鮮菜批發與出口」和「餐飲實體店鋪科技賦能」爲兩大核心業務，通過互聯網引流技術，致力於爲香港餐廳提供穩定、安全的食材供應，促進香港餐廳知名度與營業額的提升。</p><p class="about-text">從田間到餐桌，從香港到內地，我們用實業精神築牢品質底線，用科技創新重構行業效率。我們不只是蔬菜供應商，更是您的數字化營銷合作夥伴。</p><div class="cul-g"><div class="cul-c"><h4>只賣一級菜</h4><p>品質是底線，非一級不進港。</p></div><div class="cul-c"><h4>誠信透明</h4><p>每斤僅賺0.3HKD，價格公開。</p></div></div></div></section>
+<section class="sec" id="business"><div class="sec-h"><div class="sec-l">OUR BUSINESS</div><h2 class="sec-t">兩大核心業務</h2><p class="sec-s">以生鮮供應鏈爲根基，以科技賦能爲翅膀</p></div><div class="biz-g"><div class="biz-c"><div class="biz-img" style="background-image:url('images/exported/2_66.png')"></div><div class="biz-ct"><span class="biz-tag gn">生鮮供應鏈</span><div class="biz-t">優質蔬菜供應</div><p class="biz-d">家常鮮蔬、定製淨菜、名優/進口蔬菜，每日從內地核心產區直供香港，顆顆嚴選。</p></div></div><div class="biz-c"><div class="biz-img" style="background-image:url('images/exported/2_74.png')"></div><div class="biz-ct"><span class="biz-tag gd">科技賦能</span><div class="biz-t">餐飲科技賦能</div><p class="biz-d">免費爲實體店鋪建立官網、TikTok/INS/FB社媒引流、助力餐廳提高知名度與營業額，實現餐廳實現數字化獲客轉型。</p></div></div></div></section>
+<section class="org-sec" id="org"><div class="sec-h"><div class="sec-l">ORGANIZATION</div><h2 class="sec-t">雙核驅動 · 組織架構</h2><p class="sec-s">香港分部（市場+科技）+ 內地分部（生產+供應），雙輪驅動跨境生鮮供應鏈</p></div><div class="org-chart"><img src="images/org-chart-options/方案01.svg" alt="組織架構圖"></div></section>
+<section class="supply" id="supply"><div class="sec-h"><div class="sec-l">SUPPLY CHAIN</div><h2 class="sec-t">生鮮供應鏈</h2><p class="sec-s">從田間到餐桌，全鏈路品質把控</p></div><div><h3 class="sub-t">產品分級標準</h3><p class="sub-d" style="margin-bottom:16px">我們堅持只做一級菜，以下是我們的分級對比標準</p><table class="gtab"><thead><tr><th>對比維度</th><th>一級菜（和光標準）</th><th>二級菜（市場常見）</th></tr></thead><tbody><tr><td>外觀色澤</td><td>色澤鮮亮、飽滿均勻、無黃葉爛葉</td><td>色澤暗淡、大小不均、偶有瑕疵</td></tr><tr><td>新鮮程度</td><td>採摘後極速送達送達，含氧量充足</td><td>周轉時間長，3-4天以上，含水量下降</td></tr><tr><td>加工標準</td><td>恆溫車間標準化淨菜加工，滅菌包裝</td><td>常溫簡易加工，無滅菌處理</td></tr><tr><td>配送時效</td><td>預計23:50極速送達，深夜冷鏈直送</td><td>次日白天配送，無冷鏈保障</td></tr><tr><td>價格透明度</td><td>明碼標價，每斤僅賺0.3HKD</td><td>價格浮動大，中間環節加價不透明</td></tr></tbody></table></div><div><h3 class="sub-t">產品展示</h3><p class="sub-d" style="margin-bottom:16px">全品類一級鮮菜，滿足不同餐廳需求</p><div class="prod-g"><div class="prod-c"><div class="prod-img" style="background-image:url('images/exported/2_188.png')"></div><div class="prod-ct"><h4>家常鮮蔬</h4><p>白菜、菜心、生菜、菠菜、油麥菜、芥蘭、西蘭花等日常蔬菜，每日新鮮到港。</p></div></div><div class="prod-c"><div class="prod-img" style="background-image:url('images/exported/2_194.png')"></div><div class="prod-ct"><h4>定製淨菜</h4><p>清洗、去皮、切割、包裝一體化淨菜加工，按餐廳需求定製規格，節省後廚人力成本。</p></div></div><div class="prod-c"><div class="prod-img" style="background-image:url('images/exported/2_200.png')"></div><div class="prod-ct"><h4>名優/進口蔬菜</h4><p>雲南高原、山東壽光、甘肅高原等名優產區，以及部分進口特種蔬菜，滿足高端餐廳需求。</p></div></div></div></div><div><h3 class="sub-t">全流程溯源</h3><p class="sub-d" style="margin-bottom:16px">從種植到送達，每一個環節都透明可查</p><div class="tl"><div class="tl-line"></div><div class="tl-steps"><div class="tl-step"><div class="tl-dot"></div><h4>種植</h4><p>內地核心產區</p></div><div class="tl-step"><div class="tl-dot"></div><h4>採摘</h4><p>新鮮採摘</p></div><div class="tl-step"><div class="tl-dot"></div><h4>海關監管</h4><p>跨境檢疫</p></div><div class="tl-step"><div class="tl-dot"></div><h4>東莞加工</h4><p>淨菜加工基地</p></div><div class="tl-step"><div class="tl-dot"></div><h4>粉嶺集散</h4><p>香港倉儲配送</p></div><div class="tl-step"><div class="tl-dot"></div><h4>預計23:50極速送達</h4><p>深夜極速送達</p></div></div></div></div></section>
+<section class="sec" id="tech"><div class="sec-h"><div class="sec-l">TECH EMPOWERMENT</div><h2 class="sec-t">科技賦能</h2><p class="sec-s">不止於供應食材，更免費爲您的餐廳搭建數字化增長引擎</p></div><div class="svc-g"><div class="svc-c"><div class="svc-i">站</div><h4>免費建站</h4><p>爲合作餐廳免費搭建品牌官網/小程序，展示招牌菜品、菜單與預約入口，提升線上形象。</p></div><div class="svc-c"><div class="svc-i">流</div><h4>TikTok/INS/FB 社媒引流</h4><p>專業團隊運營TikTok、Instagram、Facebook、X/Twitter等國際化社媒賬號，爲餐廳引流獲客。</p></div><div class="svc-c"><div class="svc-i">引</div><h4>互聯網引流系統</h4><p>爲餐廳搭建互聯網引流軟件、會員管理、優惠券、線上預約等引流系統，持續帶來新顧客、回頭客。</p></div></div><div class="soc-g"><div class="soc-i">TikTok</div><div class="soc-i">INS</div><div class="soc-i">FB</div><div class="soc-i">X</div></div></section>
+<section class="sec" id="cases"><div class="sec-h"><div class="sec-l">CASES</div><h2 class="sec-t">客戶案例</h2></div><div class="case-g"><div class="case-c"><h4>港式茶餐廳</h4><div class="case-tag">穩定供應 · 60+門店</div><p>每日極速直配，品質穩定一致，幫助客戶降低30%採購成本。</p></div><div class="case-c"><h4>精品粵菜酒樓</h4><div class="case-tag">高端定製 · 淨菜服務</div><p>提供定製化淨菜規格，後廚處理時間減少50%  出餐效率顯著提升。</p></div><div class="case-c"><h4>川式火鍋品牌</h4><div class="case-tag">新鮮葉菜 · 深夜配送</div><p>預計23:50極速送達，保證次日朝早/午餐高峯蔬菜新鮮度與供應量。</p></div><div class="case-c"><h4>街市生鮮供應</h4><div class="case-tag">科技賦能 · 線上引流</div><p>免費爲街市、公屋附近的生鮮店鋪搭建小程序+社媒運營，3個月會員增長260%。</p></div></div></section>
+<section class="sec" id="news"><div class="sec-h"><div class="sec-l">NEWS</div><h2 class="sec-t">新聞動態</h2></div><div class="news-g"><div class="news-c"><div class="news-img" style="background-image:url('images/exported/2_287.png')"></div><div class="news-ct"><div class="news-date">2025.06.15</div><h4>問天實業與東莞加工基地升級合作</h4></div></div><div class="news-c"><div class="news-img" style="background-image:url('images/exported/2_293.png')"></div><div class="news-ct"><div class="news-date">2026.02.28</div><h4>CNAS實驗室認證周年：檢測標準再升級</h4></div></div><div class="news-c"><div class="news-img" style="background-image:url('images/exported/2_299.png')"></div><div class="news-ct"><div class="news-date">2026.05.10</div><h4>科技賦能計劃發布：問天公司助力餐廳數字化增長/獲客</h4></div></div></div></section>
+<section class="contact" id="contact"><div class="ci"><div class="sec-h"><div class="sec-l">CONTACT</div><h2 class="sec-t">聯繫我們</h2></div><div class="ci-item"><h5>香港分公司</h5><p>RM 107 SYNLOC TWR 223 NATHAN RD YAU MA TEI KL HONG KONG</p></div><div class="ci-item"><h5>內地分公司</h5><p>廣東省東莞市國際蔬菜產業中心 A 區</p></div><div class="ci-item"><h5>WhatsApp</h5><p>+852 59576318</p></div></div><div class="cf"><h3>在線留言</h3><form id="contactForm" action="mailto:HGTCHK01@gmail.com" method="POST" enctype="text/plain"><div class="fr"><div class="fg"><label>姓名</label><input type="text" name="姓名" placeholder="請輸入您的姓名" required></div><div class="fg"><label>WhatsApp</label><input type="tel" name="WhatsApp" placeholder="請輸入WhatsApp聯絡號碼" required></div></div><div class="fg"><label>郵箱</label><input type="email" name="郵箱" placeholder="請輸入郵箱地址"></div><div class="fg"><label>您感興趣的服務</label><select name="服務"><option value="">請選擇服務類型</option><option>蔬菜採購</option><option>淨菜定製</option><option>科技賦能諮詢</option></select></div><div class="fg"><label>留言內容</label><textarea name="留言" placeholder="請輸入您的需求..."></textarea></div><button type="submit" class="submit">提交諮詢</button></form>
+<script>
+document.getElementById('contactForm').addEventListener('submit',function(e){
+e.preventDefault();
+alert('請通過 WhatsApp +852 59576318 聯絡我們，我們會盡快回覆您。');
+this.reset();
+});
+</script></div></section>
+<footer><div class="footer"><div class="ft-l"><div class="ft-logo">問天實業</div><p class="ft-slogan">專注一級鮮菜，從田間到餐桌100%一級品質供應
+科技賦能實體，實現 1+1>2</p></div><div class="ft-r"><div class="ft-col"><h5>快速鏈接</h5><a href="#about">關於我們</a><a href="#supply">生鮮供應鏈</a><a href="#tech">科技賦能</a></div><div class="ft-col"><h5>聯繫我們</h5><a href="mailto:HGTCHK01@gmail.com">HGTCHK01@gmail.com</a><a>WhatsApp: +852 59576318</a></div></div></div></footer>
+<div class="copyright"><p>&copy; 2026 香港問天實業（科技）有限公司 版權所有</p></div>
+<script src="js/content.js"></script>
+<script>
+// 後台數據同步：讀取 localStorage 並更新前端顯示
+(function(){
+  var STORAGE_KEY="wentian_website_content_v4";
+  var data=null;
+  try{data=JSON.parse(localStorage.getItem(STORAGE_KEY));}catch(e){}
+  if(!data)return; // 沒有後台數據則用默認靜態內容
 
-  <!-- Header -->
-  <header class="site-header" id="header">
-    <a href="#hero" class="header-logo" id="nav-logo">問天實業</a>
-    <button class="menu-toggle" id="menu-toggle" aria-label="選單">
-      <span></span><span></span><span></span>
-    </button>
-    <nav class="header-nav" id="header-nav">
-      <a href="#hero">首页</a>
-      <a href="#about">关于我们</a>
-      <a href="#products">产品服务</a>
-      <a href="#advantages">核心优势</a>
-      <a href="#cases">客户案例</a>
-      <a href="#news">新闻动态</a>
-      <a href="#contact">联系我们</a>
-    </nav>
-    <a href="#contact" class="header-cta">立即咨询</a>
-  </header>
+  // Hero
+  if(data.hero){
+    var t=document.querySelector('.hero-tag');if(t&&data.hero.badge)t.textContent=data.hero.badge;
+    var t1=document.querySelector('.hero-t1');if(t1&&data.hero.title1)t1.textContent=data.hero.title1;
+    var t2=document.querySelector('.hero-t2');if(t2&&data.hero.title2)t2.textContent=data.hero.title2;
+    var d=document.querySelector('.hero-desc');if(d&&data.hero.desc)d.textContent=data.hero.desc;
+    var bp=document.querySelector('.btn-p');if(bp&&data.hero.ctaPrimary)bp.textContent=data.hero.ctaPrimary;
+    var bs=document.querySelector('.btn-s');if(bs&&data.hero.ctaSecondary)bs.textContent=data.hero.ctaSecondary;
+    var hv=document.querySelector('.hero-vis');if(hv&&data.hero.image)hv.style.backgroundImage="url('"+data.hero.image+"')";
+  }
+  // About
+  if(data.about){
+    setText('#about .sec-l',data.about.label);
+    setText('#about .sec-t',data.about.title);
+    var ps=document.querySelectorAll('#about .about-text');
+    if(ps[0]&&data.about.body1)ps[0].textContent=data.about.body1;
+    if(ps[1]&&data.about.body2)ps[1].textContent=data.about.body2;
+    var ccs=document.querySelectorAll('#about .cul-c h4');
+    if(ccs[0]&&data.about.culture1Title)ccs[0].textContent=data.about.culture1Title;
+    if(ccs[1]&&data.about.culture2Title)ccs[1].textContent=data.about.culture2Title;
+    var ccp=document.querySelectorAll('#about .cul-c p');
+    if(ccp[0]&&data.about.culture1Desc)ccp[0].textContent=data.about.culture1Desc;
+    if(ccp[1]&&data.about.culture2Desc)ccp[1].textContent=data.about.culture2Desc;
+    var ai=document.querySelector('#about .about-img img');if(ai&&data.about.image)ai.src=data.about.image;
+  }
+  // Advantages
+  if(data.advantages){
+    setText('#advantages .sec-l',data.advantages.label);
+    setText('#advantages .sec-t',data.advantages.title);
+    setText('#advantages .sec-s',data.advantages.subtitle);
+    if(data.advantages.items){
+      var acs=document.querySelectorAll('#advantages .adv-c');
+      data.advantages.items.forEach(function(it,i){
+        if(!acs[i])return;
+        var ic=acs[i].querySelector('.adv-i');if(ic&&it.icon)ic.textContent=it.icon;
+        var tt=acs[i].querySelector('.adv-t');if(tt&&it.title)tt.textContent=it.title;
+        var dd=acs[i].querySelector('.adv-d');if(dd&&it.desc)dd.textContent=it.desc;
+      });
+    }
+  }
+  // Business
+  if(data.business){
+    setText('#business .sec-l',data.business.label);
+    setText('#business .sec-t',data.business.title);
+    setText('#business .sec-s',data.business.subtitle);
+    if(data.business.items){
+      var bcs=document.querySelectorAll('#business .biz-c');
+      data.business.items.forEach(function(it,i){
+        if(!bcs[i])return;
+        var tg=bcs[i].querySelector('.biz-tag');if(tg&&it.tag)tg.textContent=it.tag;
+        var tt=bcs[i].querySelector('.biz-t');if(tt&&it.title)tt.textContent=it.title;
+        var dd=bcs[i].querySelector('.biz-d');if(dd&&it.desc)dd.textContent=it.desc;
+        var im=bcs[i].querySelector('.biz-img');if(im&&it.image)im.style.backgroundImage="url('"+it.image+"')";
+      });
+    }
+  }
+  // Org
+  if(data.org){
+    setText('#org .sec-l',data.org.label);
+    setText('#org .sec-t',data.org.title);
+    setText('#org .sec-s',data.org.subtitle);
+    var oi=document.querySelector('#org .org-chart img');if(oi&&data.org.image)oi.src=data.org.image;
+  }
+  // Supply
+  if(data.supply){
+    setText('#supply .sec-l',data.supply.label);
+    setText('#supply .sec-t',data.supply.title);
+    setText('#supply .sec-s',data.supply.subtitle);
+    // grading rows
+    if(data.supply.gradingRows){
+      var trs=document.querySelectorAll('#supply .gtab tbody tr');
+      data.supply.gradingRows.forEach(function(r,i){
+        if(!trs[i])return;
+        var tds=trs[i].querySelectorAll('td');
+        if(tds[0]&&r.dimension)tds[0].textContent=r.dimension;
+        if(tds[1]&&r.grade1)tds[1].textContent=r.grade1;
+        if(tds[2]&&r.grade2)tds[2].textContent=r.grade2;
+      });
+    }
+    // products
+    if(data.supply.products){
+      var pcs=document.querySelectorAll('#supply .prod-c');
+      data.supply.products.forEach(function(p,i){
+        if(!pcs[i])return;
+        var tt=pcs[i].querySelector('h4');if(tt&&p.title)tt.textContent=p.title;
+        var dd=pcs[i].querySelector('p');if(dd&&p.desc)dd.textContent=p.desc;
+        var im=pcs[i].querySelector('.prod-img');if(im&&p.image)im.style.backgroundImage="url('"+p.image+"')";
+      });
+    }
+    // timeline
+    if(data.supply.timeline){
+      var tls=document.querySelectorAll('#supply .tl-step');
+      data.supply.timeline.forEach(function(t,i){
+        if(!tls[i])return;
+        var h4=tls[i].querySelector('h4');if(h4&&t.title)h4.textContent=t.title;
+        var p=tls[i].querySelector('p');if(p&&t.desc)p.textContent=t.desc;
+      });
+    }
+  }
+  // Tech
+  if(data.tech){
+    setText('#tech .sec-l',data.tech.label);
+    setText('#tech .sec-t',data.tech.title);
+    setText('#tech .sec-s',data.tech.subtitle);
+    if(data.tech.services){
+      var scs=document.querySelectorAll('#tech .svc-c');
+      data.tech.services.forEach(function(s,i){
+        if(!scs[i])return;
+        var ic=scs[i].querySelector('.svc-i');if(ic&&s.icon)ic.textContent=s.icon;
+        var h4=scs[i].querySelector('h4');if(h4&&s.title)h4.textContent=s.title;
+        var p=scs[i].querySelector('p');if(p&&s.desc)p.textContent=s.desc;
+      });
+    }
+  }
+  // Cases
+  if(data.cases){
+    setText('#cases .sec-l',data.cases.label);
+    setText('#cases .sec-t',data.cases.title);
+    if(data.cases.items){
+      var ccs2=document.querySelectorAll('#cases .case-c');
+      data.cases.items.forEach(function(c,i){
+        if(!ccs2[i])return;
+        var h4=ccs2[i].querySelector('h4');if(h4&&c.title)h4.textContent=c.title;
+        var tg=ccs2[i].querySelector('.case-tag');if(tg&&c.tag)tg.textContent=c.tag;
+        var p=ccs2[i].querySelector('p');if(p&&c.desc)p.textContent=c.desc;
+      });
+    }
+  }
+  // News
+  if(data.news){
+    setText('#news .sec-l',data.news.label);
+    setText('#news .sec-t',data.news.title);
+    if(data.news.items){
+      var ncs=document.querySelectorAll('#news .news-c');
+      data.news.items.forEach(function(n,i){
+        if(!ncs[i])return;
+        var dt=ncs[i].querySelector('.news-date');if(dt&&n.date)dt.textContent=n.date;
+        var h4=ncs[i].querySelector('h4');if(h4&&n.title)h4.textContent=n.title;
+        var im=ncs[i].querySelector('.news-img');if(im&&n.image)im.style.backgroundImage="url('"+n.image+"')";
+      });
+    }
+  }
+  // Contact
+  if(data.contact){
+    setText('#contact .sec-l',data.contact.label);
+    setText('#contact .sec-t',data.contact.title);
+    var cis=document.querySelectorAll('#contact .ci-item');
+    if(cis[0]){var h5=cis[0].querySelector('h5');if(h5&&data.contact.hkTitle)h5.textContent=data.contact.hkTitle;var p=cis[0].querySelector('p');if(p&&data.contact.hkAddress)p.textContent=data.contact.hkAddress;}
+    if(cis[1]){var h5=cis[1].querySelector('h5');if(h5&&data.contact.cnTitle)h5.textContent=data.contact.cnTitle;var p=cis[1].querySelector('p');if(p&&data.contact.cnAddress)p.textContent=data.contact.cnAddress;}
+    if(cis[2]){var h5=cis[2].querySelector('h5');if(h5&&data.contact.whatsappTitle)h5.textContent=data.contact.whatsappTitle;var p=cis[2].querySelector('p');if(p&&data.contact.whatsappNumber)p.textContent=data.contact.whatsappNumber;}
+    var fh3=document.querySelector('#contact .cf h3');if(fh3&&data.contact.formTitle)fh3.textContent=data.contact.formTitle;
+  }
+  // Footer
+  if(data.footer){
+    var fl=document.querySelector('.ft-logo');if(fl&&data.footer.brand)fl.textContent=data.footer.brand;
+    var fs=document.querySelector('.ft-slogan');if(fs&&data.footer.slogan)fs.textContent=data.footer.slogan;
+    var cp=document.querySelector('.copyright p');if(cp&&data.footer.copyright)cp.innerHTML=data.footer.copyright;
+    var ea=document.querySelector('.ft-col a[href^="mailto"]');if(ea&&data.footer.email){ea.href="mailto:"+data.footer.email;ea.textContent=data.footer.email;}
+  }
+  // Nav logo
+  if(data.nav&&data.nav.logo){var nl=document.querySelector('.nav-logo');if(nl)nl.textContent=data.nav.logo;}
 
-  <!-- Hero -->
-  <section class="hero" id="hero">
-    <div class="hero-text">
-      <div class="hero-badge" id="hero-badge">科技賦能 · 跨境生鮮 · 低空經濟</div>
-      <h1 class="hero-title">
-        <span class="hero-title-line1" id="hero-title1">AI 驅動的跨境生鮮供應鏈</span>
-        <span class="hero-title-line2" id="hero-title2">與無人機物流科技</span>
-      </h1>
-      <p class="hero-subtitle" id="hero-subtitle">香港問天實業（科技）有限公司，專注跨境生鮮貿易與AI無人機技術兩大核心業務。旗下「和光蔬菜」品牌爲香港餐廳提供一級新鮮蔬菜與淨菜加工服務；子公司豈朝科技持有CAAC民用無人駕駛航空器運營合格證，深耕低空經濟領域。</p>
-      <div class="hero-cta-row">
-        <a href="#products" class="btn-primary" id="hero-cta-primary">了解我們的業務</a>
-        <a href="#contact" class="btn-secondary" id="hero-cta-secondary">合作諮詢</a>
-      </div>
-    </div>
-    <div class="hero-visual" id="hero-visual">
-      <div class="hero-visual-overlay"></div>
-    </div>
-  </section>
-
-  <!-- About -->
-  <section class="about" id="about">
-    <div class="about-image" id="about-image">
-      <div class="about-image-overlay"></div>
-    </div>
-    <div class="about-text">
-      <div class="section-label" id="about-label">ABOUT US</div>
-      <h2 class="about-title" id="about-title">關於香港問天實業</h2>
-      <p class="about-body" id="about-body1">香港問天實業（科技）有限公司是一家立足香港、輻射內地與國際的科技企業，核心團隊成員來自清華大學、北京大學、香港嶺南大學等高校及省委省政府前職員。公司旗下擁有雲端問京（北京）科技有限公司、宣朝科技有限公司、豈朝科技（哈爾濱）有限公司等多家子公司，形成科技研發與跨境貿易協同發展的業務格局。</p>
-      <p class="about-body" id="about-body2">公司使命：立足高校等智能產業研究院，深耕核心技術研發與跨領域融合創新，爲實體經濟進行科技賦能，攜手實體經濟由當今十年邁進下一個十年。公司持有香港食物進口商/分銷商登記（TR-25-001129），並通過CNAS國家實驗室認證的食品檢測體系，確保每一份食材的安全與品質。</p>
-      <div class="about-divider"></div>
-    </div>
-  </section>
-
-  <!-- Advantages -->
-  <section class="advantages" id="advantages">
-    <div class="section-header-center">
-      <div class="section-label" id="advantages-label">WHY CHOOSE US</div>
-      <h2 class="section-title-center" id="advantages-title">我們的核心優勢</h2>
-      <p class="section-subtitle-center" id="advantages-subtitle">以品質與信譽，成爲香港餐飲行業首選的食材合作夥伴</p>
-    </div>
-    <div class="advantages-grid" id="advantages-grid"></div>
-  </section>
-
-  <!-- Products -->
-  <section class="products" id="products">
-    <div class="section-header-center">
-      <div class="section-label" id="products-label">OUR PRODUCTS</div>
-      <h2 class="section-title-center" id="products-title">產品與服務</h2>
-      <p class="section-subtitle-center" id="products-subtitle">全品類食材供應，滿足香港餐廳的多樣化需求</p>
-    </div>
-    <div class="products-grid" id="products-grid"></div>
-  </section>
-
-  <!-- Cases -->
-  <section class="cases" id="cases">
-    <div class="section-header-center">
-      <div class="section-label" id="cases-label">CLIENT CASES</div>
-      <h2 class="section-title-center" id="cases-title">合作客戶</h2>
-      <p class="section-subtitle-center" id="cases-subtitle">深受香港眾多知名餐飲品牌信賴</p>
-    </div>
-    <div class="stats-row" id="stats-row"></div>
-  </section>
-
-  <!-- News -->
-  <section class="news" id="news">
-    <div class="section-header-center">
-      <div class="section-label" id="news-label">NEWS & BLOG</div>
-      <h2 class="section-title-center" id="news-title">新闻动态</h2>
-    </div>
-    <div class="news-grid" id="news-grid"></div>
-  </section>
-
-  <!-- Contact -->
-  <section class="contact" id="contact">
-    <div class="section-header-center">
-      <div class="section-label" id="contact-label">GET IN TOUCH</div>
-      <h2 class="section-title-center" id="contact-title">聯系我們</h2>
-      <p class="section-subtitle-center" id="contact-subtitle">期待與您的合作，爲您的餐廳提供最優質的食材服務</p>
-    </div>
-    <div class="contact-body">
-      <div class="contact-info" id="contact-info"></div>
-      <div class="contact-form-wrapper">
-        <h3 class="contact-form-title">發送諮詢</h3>
-        <form class="contact-form" id="contact-form" onsubmit="return false;">
-          <input type="text" name="name" placeholder="您的姓名" class="form-input">
-          <input type="email" name="email" placeholder="您的邮箱" class="form-input">
-          <textarea name="message" placeholder="請輸入您的需求..." class="form-textarea"></textarea>
-          <button type="submit" class="form-submit">提交咨询</button>
-        </form>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="site-footer">
-    <div class="footer-main">
-      <div class="footer-brand">
-        <div class="footer-logo">問天實業</div>
-        <p class="footer-tagline">爲香港高端餐飲甄選全球優質食材，以AI科技賦能跨境生鮮供應鏈</p>
-      </div>
-      <div class="footer-nav">
-        <div class="footer-nav-title">快速鏈接</div>
-        <a href="#about">关于我们</a>
-        <a href="#products">产品服务</a>
-        <a href="#advantages">核心优势</a>
-      </div>
-      <div class="footer-nav">
-        <div class="footer-nav-title">服務支持</div>
-        <a href="#cases">客户案例</a>
-        <a href="#news">新闻动态</a>
-        <a href="#contact">联系我们</a>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p class="footer-copyright">Copyright 2026 香港問天實業（科技）有限公司 | Hong Kong Wentian Industrial (Technology) Limited All Rights Reserved.</p>
-    </div>
-  </footer>
-
-  <script src="js/content.js"></script>
-  <script src="js/website.js"></script>
+  function setText(sel,val){
+    if(!val)return;
+    var el=document.querySelector(sel);
+    if(el)el.textContent=val;
+  }
+})();
+</script>
 </body>
 </html>
